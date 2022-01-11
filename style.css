@@ -21,6 +21,7 @@ body {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 img {
@@ -124,8 +125,8 @@ nav li .cart::after {
 .hero::after {
     content: "";
     position: absolute;
-    height: 200px;
-    bottom: -200px;
+    height: 300px;
+    bottom: -300px;
     right: 0;
     left: 0;
     background: var(--primary-color);
@@ -183,6 +184,89 @@ nav li .cart::after {
 /* section-3 */
 
 
+.duration {
+    height: 600px;
+}
+
+
+.box {
+    width: 1400px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    margin: 0 auto;
+    padding: 80px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.178);    
+}
+
+.blue-line{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+}
+
+.box .flex-1 {
+    justify-content: space-around;
+}
+
+.box .flex-1 .fas, .far {
+    color: white;
+    font-size: 15px;
+}
+
+/* section-4 */
+
+.learning {
+    height: 1800px;
+}
+
+.video-holder {
+        width: 600px;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        padding: 40px;
+        z-index: 1;
+        border-radius: 30px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.178);
+        position: relative;
+}
+
+.play-butt {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 250px;
+    bottom: 230px;
+}
+
+.play-butt img {
+    border-radius: 50%;
+}
+
+
+/* uitlity */
+
+.p {
+    padding:10px;
+    border-radius: 5px;
+
+}
+
+.bc-1{
+    background:var(--primary-color)
+}
+.bc-2{
+    background:#FB6F5B;
+}
+.bc-3{
+    background:#FFB428;
+}
+.bc-4{
+    background:var(--button-color)
+}
+
 
 .mx {
     margin: 0 20px;
@@ -219,28 +303,7 @@ nav li .cart::after {
     text-align: center;
 }
 
-
-.box {
-    width: 1400px;
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-    margin: 0 auto;
-    padding: 80px;
-    z-index: 1;
-    border-radius: 30px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.178);    
-}
-
-.blue-line{
-    background-color: var(--primary-color);
-    padding: 5px;
-    border-radius: 50px;
-    color: white;
-}
-
-.p {
-    padding: 3px;
-    border-radius: 3px;
-    background-color: violet;
+.i-black {
+    display: inline-block;
 }
 
