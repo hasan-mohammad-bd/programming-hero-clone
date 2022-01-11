@@ -3,6 +3,14 @@
     --button-color: #EB2C93;
 }
 
+.container,.box {
+    zoom: 0.90; /* Old IE only */
+    -moz-transform: scale(0.90);
+    -webkit-transform: scale(0.90);
+    transform: scale(0.90);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -125,8 +133,8 @@ nav li .cart::after {
 .hero::after {
     content: "";
     position: absolute;
-    height: 300px;
-    bottom: -300px;
+    height: 400px;
+    top: 600px;
     right: 0;
     left: 0;
     background: var(--primary-color);
@@ -185,7 +193,7 @@ nav li .cart::after {
 
 
 .duration {
-    height: 600px;
+    height: 500px;
 }
 
 
@@ -225,7 +233,7 @@ nav li .cart::after {
 .video-holder {
         width: 600px;
         background-color: rgb(255, 255, 255);
-        height: 500px;
+        height: 750px;
         padding: 40px;
         z-index: 1;
         border-radius: 30px;
@@ -233,17 +241,67 @@ nav li .cart::after {
         position: relative;
 }
 
+
 .play-butt {
     height: 90px;
     width: 90px;
     position: absolute;
     left: 250px;
-    bottom: 230px;
+    top: 155px;
+}
+
+.video-holder .web-image {
+    border-radius: 15px;
 }
 
 .play-butt img {
     border-radius: 50%;
 }
+
+.en-button {
+    display: block;
+    background: var(--primary-color);
+    padding:25px 0;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+
+    
+}
+
+.flex-2 {
+    flex-direction: column;
+
+}
+
+.small-icon .flex{
+    justify-content: space-between;
+}
+
+.small-box {
+    height: 45px;
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.178);
+    padding: 10px;
+    
+}
+
+.small-box img {
+    width: 30px
+}
+
+.money {
+    font-size: 48px;
+}
+
+.text-section {
+    flex-wrap: 1;
+}
+
+
+
 
 
 /* uitlity */
